@@ -1,0 +1,25 @@
+<html>
+    <head>
+        <h1>To print current date and timing</h1>
+    </head>
+    <body>
+        <script>
+        var days = ['Sunday','Monday','Tuesday','Wednesday','Thursday','Friday','Saturday'];
+           
+        var todaydate = new Date();
+        var todayday = "Today is "+days[todaydate.getDay()];
+        document.write(todayday);
+        document.write("<br/>");       
+
+        var hours = todaydate.getHours();
+        if(hours>12)
+        {
+        hours = hours%12;
+        }
+        var timeformat = hours>=12?'PM' :'AM';
+        var timing = "Current time is : "+hours+" "+timeformat +" : "+todaydate.getMinutes()+" : "+todaydate.getSeconds();
+        document.write(timing);
+
+    </script>
+    </body>
+</html>

@@ -1,0 +1,19 @@
+<html>
+    <head>
+        <h1>This is to print the date format</h1>
+    </head>
+    <body>
+        <script>
+            var todaydate = new Date();
+            var thisyear   = todaydate.getFullYear();
+            var thismonth  = todaydate.getMonth()+1;
+            var thisdate   = todaydate.getDate();
+            var valid_date_hyphen = thismonth+"-"+thisdate+"-"+thisyear;
+            var valid_date_slash  = thismonth+'/'+thisdate+'/'+thisyear;
+            document.write(valid_date_hyphen);
+            document.write(", ");
+            document.write(valid_date_slash);
+
+        </script>
+    </body>
+</html>
