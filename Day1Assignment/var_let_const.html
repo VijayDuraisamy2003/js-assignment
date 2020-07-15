@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>var let const Examples</title>
+</head>
+<body>
+<h2>Var let Const</h2>
+     <h4>1.var </h4>
+       <p>var is globally and locally scoped. If var is used outside the function,it can be used for the whole window. If var is used inside the function, it can be accesed only inside the function.</p>
+
+       <script>
+           var name = 'kiran';
+           function fun1()
+            {
+              var city = 'chennai';
+	          console.log(city)  // output : chennai
+            }
+            fun1();
+            console.log(name);   //output : kiran
+            console.log(city)  // output  : error: city is not defined
+         </script> 
+         
+<p>var variable can redeclared and updated and does not show error</p>
+<script>
+    var name = 'kiran';
+    var name = 'jai';    
+     console.log(name);  //output : jai
+</script>
+
+<script>
+var name = 'kiran';
+name = 'jai'; 
+console.log(name); //output : jai
+</script>
+
+
+<h4>2.let </h4>
+
+<p>let is block scoped</p>
+
+<script>
+
+    let country = 'canada';
+    function fun2()
+    {
+        let state='TN';
+        console.log(state);//TN
+        console.log(country); //canada
+    }
+    fun2();
+    console.log(country);  // canada
+    console.log(state);    //state is not defined
+</script>
+
+<p>let can be updated and not redeclared</p>
+
+<script>
+    let name='kiran';
+    let name='jai'; //error : Identifier 'name' has already been declared
+    console.log(name);
+</script>
+
+<script>
+    let name = 'kiran';
+    name='jai';  
+    console.log(name);  //output : jai
+</script>
+
+
+<h4>3.const </h4>
+
+<p>variable declared with the 'const' maintains the constant values.</p>
+<p>const cannot be re declared or updated.</p>
+<p>Every const variable must be initialized at the time of declaration.</p>
+
+<script>
+    const name='kiran';
+    const name='jai'; // Identifier 'name' has already been declared
+    console.log(name);
+</script>
+<script>
+
+    const place = 'chennai';
+    place='bangalore';  
+    console.log(name);  //error: Assignment to constant variable. 
+</script>
+    
+</body>
+</html>

@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Console Types</title>
+</head>
+<body>
+
+    <h2>Console Methods</h2>
+    <p>Console objects which provides the user access to the browser for the debugging purposes.  </p>
+    
+<h4>1.log() </h4>
+<p>It is used to print the output to the console.Inside teh log may be strinf , boolean , integer, object,array.</p>
+<script>    
+    console.log('abc');
+    console.log(5);
+    console.log(true);
+    console.log(null);
+    console.log(undefined);
+    console.log([1,2,3,4]);
+    console.log({name :'kiran',age : '24',city :'chennai'});
+</script>
+
+
+<h4>2.error() </h4>
+<p>It is used to log error message to the console.In default, it is highlight in red color.</p>
+<script>
+    console.error('This is an error message');
+    </script>
+
+
+<h4>3.warn() </h4>
+<p>It is used to log warn message to the console.In default, it is highlight in yellow color.</p>
+<script>
+    console.warn('This is an warning message');
+</script>
+
+
+<h4>4.clear() </h4>
+<p>It is used to clear the console. There willbe text 'Console was cleared' after using this method.</p>
+<script>
+    console.clear();
+</script>
+
+
+
+<h4>5.time() and timeEnd</h4>
+<p>It is used to calculate the time of the operation performed. It is in ms.</p>
+<script>
+    console.time('simple');
+    let fun=function()
+    {
+        console.log("fun 1 is running......")
+    }
+    let fun2=function()
+    {
+        console.log("fun2 is running.......")
+    }
+    console.timeEnd('simple');
+</script>
+
+
+<h4>6.table() </h4>
+<p>It is used to generate table in the console. The input may be array or object.</p>
+<script>
+    console.table({'a':1,'b':2});
+</script>
+
+
+<h4>7.count() </h4>
+<p>It is used to count the number that the functin hits the count method.</p>
+     <script>
+    
+    for(var i=0;i<5;i++)
+    {
+      console.count(i);
+    }
+    
+</script>
+
+
+
+<h4>8.group() and groupEnd() </h4>
+<p>It is used to group the contents in the separate block.groupEnd is used to end the block.</p>
+
+<script>
+console.group('simple'); 
+console.warn('warning!'); 
+console.error('error here'); 
+console.log('vivi vini vici'); 
+console.groupEnd('simple'); 
+console.log('new section'); 
+</script>
+
+
+<h4>9.custom console log </h4>
+<p>It is used to add css styles to the text in the console.</p>
+<script>    
+    console.log("%c Javascript Batch1","color:blue");
+</script>
+    
+</body>
+</html>
