@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Check Even or Odd from User Input</title>
+</head>
+
+<body>
+    <script>
+
+        var num = Number(prompt("Give a number to check even or odd?", 0));
+        console.log(num);
+
+        if (num % 2 === 0) {
+            console.log(`The number entered is ${num} and Number is even`);
+        }
+        else if (num % 2 === 1) {
+            console.log(`The number entered is ${num} and Number is odd`);
+        }
+        else {
+            console.log(`Enter the valid number!!!`);
+        }
+
+    </script>
+</body>
+
+</html>

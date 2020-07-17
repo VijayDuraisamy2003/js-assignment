@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Give Grade for the marks</title>
+</head>
+
+<body>
+    <h2>Conditional Statements</h2>
+    <script>
+        var marksnum = prompt("Enter the marks..");
+        var marks    = Number(marksnum);
+
+        if (marksnum != null && marks<=100) {
+            if (marks > 80) {
+                console.log(`Marks are ${marks} and grade is A`);
+            }
+            else if (marks > 50) {
+                console.log(`Marks are ${marks} and grade is B`);
+            }
+            else if (marks >= 35) {
+                console.log(`Marks are ${marks} and grade is C`);
+            }
+            else if (marks < 35) {
+                console.log(`Marks are ${marks} and grade is F`);
+            }
+            else {
+                console.log("Plese enter your marks.");
+            }
+        }
+        else {
+            console.log("Plese enter your marks.");
+        }
+    </script>
+
+    <h2>Ternary Operators</h2>
+    <script>
+        var marksnum = prompt("Enter the marks..");
+        var marks    = Number(marksnum);
+
+        if (marksnum != null && marks<=100) {
+            var results = (marks > 80) ? `Marks are ${marks} and grade is A` :
+                (marks > 50) ? `Marks are ${marks} and grade is B` :
+                    (marks >= 35) ? `Marks are ${marks} and grade is C` :
+                        (marks < 35) ? `Marks are ${marks} and grade is F` :
+                            `Plese enter your marks.`;
+            console.log(results);
+        }
+        else {
+            console.log("Plese enter your marks.");
+        }
+    </script>
+
+
+    <h2>Switch Statement</h2>
+    <script>
+        var marksnum = prompt("Enter the marks..");
+        var marks = Number(marksnum);
+
+        if (marksnum != null && marks<=100) {
+            switch (true) {
+                case (marks > 80):
+                    {                       
+                        console.log(`Marks are ${marks} and grade is A`);
+                        break;
+                    }
+                case (marks > 50):
+                    {
+                        console.log(`Marks are ${marks} and grade is B`);
+                        break;
+                    }
+                case (marks >= 35):
+                    {
+                        console.log(`Marks are ${marks} and grade is C`);
+                        break;
+                    }
+                case (marks < 35):
+                    {
+                        console.log(`Marks are ${marks} and grade is F`);
+                        break;
+                    }
+                default:
+                    {
+                        console.log(`Plese enter your marks.`);
+                    }
+            }
+        }
+        else {
+            console.log(`Plese enter your marks.`);
+        }
+    </script>
+</body>
+</html>
