@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>2.Destructure the Object</title>
+</head>
+
+<body>
+    <script>
+        const student = { name: "Helsinki", age: 24, projects: { dicename: "Two player dice game using Javascript" } };
+        const { name, age, projects: { dicename } } = student;
+        console.log(name, age, dicename);
+    </script>
+</body>
+
+</html>
