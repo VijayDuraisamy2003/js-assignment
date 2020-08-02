@@ -1,0 +1,29 @@
+<html>
+    <head>
+        <title>Random Quote</title>
+
+        <h1>Quote Generator</h1>
+
+    </head>
+
+    <body>
+
+        <div id="display"> </div>
+
+        <button onclick ="newquote()">New Quote</button>
+        
+        <script>
+
+            var quote  = ['You must be the change you wish to see in the world.” — Gandhi.','Die with memories, not dreams.','Change the world by being yourself.','Every moment is a fresh beginning.','Never regret anything that made you smile.','Aspire to inspire before we expire.','Love For All, Hatred For None.','Every moment is a fresh beginning.','Ambition is the path to success','Believe it can be done','Knowing is not enough; we must apply.'];
+
+            function newquote()
+            {
+                var random = Math.floor(Math.random() * (quote.length));
+                document.getElementById('display').innerHTML = quote[random];
+            }        
+                   </script>
+
+    </body>
+</html>
+
+
